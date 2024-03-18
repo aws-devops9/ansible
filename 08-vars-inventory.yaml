@@ -1,0 +1,7 @@
+# Using Variables from the inventory file
+- name: Variables from Inventory
+  hosts: localhost
+  tasks:
+    - name: check Variables
+      ansible.builtin.debug:
+        msg: "Hi, I'm learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
