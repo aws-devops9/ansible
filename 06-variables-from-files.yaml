@@ -1,0 +1,12 @@
+# TASK Level variables
+# TASk level variables will overwrite PLAY level variables
+- name: Variables from PLAY Level
+  hosts: localhost
+  vars_files:
+  - variables.yaml 
+  tasks:
+    - name: check Variables
+      vars:
+        Course: "Devops with AWS" # It will overwrite the variable "Cource"
+      ansible.builtin.debug:
+        msg: "Hi, I'm learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
