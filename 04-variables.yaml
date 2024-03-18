@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     Course: "Devops"
-    Trainder: "Prem"
+    Trainer: "Prem"
     Duration: "120 Hrs" 
   tasks:
     - name: check Variables
