@@ -1,5 +1,4 @@
-# TASK Level variables
-# TASk level variables will overwrite PLAY level variables
+# Taking variables from different place
 - name: Variables from PLAY Level
   hosts: localhost
   vars_files:
