@@ -4,7 +4,8 @@
   tasks:
     - name : Print Persons
       ansible.builtin.package: 
-        msg: "{{item}}" # Item is the default key word for ansible loop
+        name: "{{item}}" # Item is the default key word for ansible loop
+        state: present
       loop:
         - git
         - nginx
