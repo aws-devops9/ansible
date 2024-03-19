@@ -10,7 +10,7 @@
       ansible.builtin.debug:
         msg: user output is {{user}}
 
-    - naem: Print Exit status or return
+    - name: Print Exit status or return
       ansible.builtin.debug:
         msg: "Status is: {{user.rc}}"
       
