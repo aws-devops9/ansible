@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+    - name : Print Persons
+      ansible.builtin.debug:
+        msg: "Hello {{item}}" # Item is the default key word for ansible loop
+      loop:
+        - Ramesh
+        - Prem
+        - Robert
