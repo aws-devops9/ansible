@@ -28,6 +28,6 @@
 
   - name: Print Key BOOLEAN
     ansible.builtin.debug:
-      msg: "Trainer: {{Trainer}}"
+      msg: "Is he a Trainer: {{Trainer}}"
 
       
