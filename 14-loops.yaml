@@ -1,0 +1,11 @@
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
+    - name : Print Persons
+      ansible.builtin.package: 
+        msg: "{{item}}" # Item is the default key word for ansible loop
+      loop:
+        - git
+        - nginx
+        - postfix
